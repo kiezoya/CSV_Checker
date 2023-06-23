@@ -139,6 +139,7 @@ Sub GetCsvData()
             Workbooks.Open CsvNm
         Else
             MsgBox "ファイルが存在しません。", vbExclamation
+            Exit Sub
         End If
         'CSV最終行を格納
         maxRw = ActiveWorkbook.Sheets(1).Cells(1048576, 2).End(xlUp).Row
